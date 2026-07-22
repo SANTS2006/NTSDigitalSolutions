@@ -3,6 +3,8 @@ const company = {
 
     serviceMotto: "We build digital solutions that help businesses improve operations, connect with customers, and grow through technology.",
 
+    solutionsMotto: "Explore how NTS Digital Solutions transforms ideas into impactful digital products that help businesses grow and innovate.",
+
     story:
         "NTS Digital Solutions was founded with a vision to help businesses, organizations, and institutions leverage technology to improve operations, connect with customers, and create new opportunities.",
 

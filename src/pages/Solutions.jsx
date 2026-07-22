@@ -1,8 +1,9 @@
+import SolutionsHero from '../components/sections/SolutionsHero'
 function Solutions() {
     return (
-        <div>
-            <h1>Solutions Page</h1>
-        </div>
+        <>
+            <SolutionsHero />
+        </>
     );
 }
 
