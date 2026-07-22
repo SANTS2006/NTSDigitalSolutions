@@ -85,9 +85,9 @@ function Navbar() {
                             Contact
                         </Link>
 
-                        <Button onClick={closeMenu}>
+                        {/* <Button onClick={closeMenu}>
                             Get Started
-                        </Button>
+                        </Button> */}
 
                     </div>
                 </div>
@@ -123,9 +123,9 @@ function Navbar() {
                                 Contact
                             </Link>
 
-                            <Button onClick={closeMenu}>
+                            {/* <Button onClick={closeMenu}>
                                 Get Started
-                            </Button>
+                            </Button> */}
 
                         </motion.div>
                     )
