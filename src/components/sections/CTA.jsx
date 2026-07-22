@@ -5,14 +5,14 @@ function CTA() {
 
     return (
 
-        <section className=" py-20 bg-blue-600 ">
+        <section className=" py-20 bg-slate-50 ">
             <div className="max-w-5xl mx-auto px-6  text-center ">
-                <h2 className=" text-3xl md:text-5xl font-bold text-white " >
+                <h2 className=" text-3xl md:text-5xl font-bold" >
                     Ready to transform your ideas
                     into digital solutions?
                 </h2>
 
-                <p className=" mt-6 text-blue-100 text-lg max-w-2xl mx-auto ">
+                <p className=" mt-6  text-lg max-w-2xl mx-auto">
                     Let's work together to build modern
                     technology solutions that help your
                     business grow.
@@ -21,7 +21,7 @@ function CTA() {
                 <div className=" mt-8 flex justify-center">
 
                     <Link to="/contact">
-                        <Button variant="white">
+                        <Button variant="secondary">
                             Contact NTS
                         </Button>
                     </Link>
