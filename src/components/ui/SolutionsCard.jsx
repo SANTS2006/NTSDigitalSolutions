@@ -44,6 +44,8 @@ function SolutionsCard({
 
                     alt={solution.title}
 
+                    loading="lazy"
+
                     className="
                     w-full
                     h-full

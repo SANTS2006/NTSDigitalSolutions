@@ -54,6 +54,8 @@ function SolutionGallery({
 
                             src={image}
 
+                            loading="lazy"
+
                             alt="Solution screenshot"
 
                             className="
