@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 
 
-function SEO({title = "NTS Digital Solutions | Empowering Businesses Through Digital Innovation", description = "NTS Digital Solutions builds custom digital solutions that help businesses grow.", url = "https://ntsdigitalsolutions.tech", image = "/logo.png", }) {
+function SEO({title = "NTS Digital Solutions | Empowering Businesses Through Digital Innovation", description = "NTS Digital Solutions builds custom digital solutions that help businesses grow.", url = "https://ntsdigitalsolutions.com", image = "/logo.png", }) {
 
     return (
 
