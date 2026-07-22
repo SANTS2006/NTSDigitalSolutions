@@ -4,6 +4,7 @@ import SolutionsPreview from "../components/sections/SolutionsPreview";
 import IndustriesPreview from "../components/sections/IndustriesPreview";
 import WhyChoose from "../components/sections/WhyChoose";
 import Founder from "../components/sections/Founder";
+import CTA from "../components/sections/CTA";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <IndustriesPreview />
             <WhyChoose />
             <Founder />
+            <CTA />
         </>
     );
 }

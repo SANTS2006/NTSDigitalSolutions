@@ -1,7 +1,8 @@
 function Button({ children, variant = "primary", onClick}){
     const styles = {
         primary: "bg-blue-600 text-white hover:bg-blue-700",
-        secondary: "border border-blue-600 text-blue-600 hover:bg-blue-50"
+        secondary: "border border-blue-600 text-blue-600 hover:bg-blue-50",
+        white: "bg-white text-blue-600"
     }
 
     return (
