@@ -5,6 +5,8 @@ const company = {
 
     solutionsMotto: "Explore how NTS Digital Solutions transforms ideas into impactful digital products that help businesses grow and innovate.",
 
+    industriesMotto: "NTS Digital Solutions creates technology solutions tailored to the unique needs of different industries, helping organizations improve efficiency and growth.",
+
     story:
         "NTS Digital Solutions was founded with a vision to help businesses, organizations, and institutions leverage technology to improve operations, connect with customers, and create new opportunities.",
 
