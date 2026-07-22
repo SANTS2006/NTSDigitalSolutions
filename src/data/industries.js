@@ -1,42 +1,78 @@
 const industries = [
 
     {
-        title: "Education",
+        id: "healthcare",
 
-        description:
-            "Digital solutions that help schools and educational institutions manage learning, administration, and communication."
-    },
-
-
-    {
         title: "Healthcare",
 
+        icon: "🏥",
+
         description:
-            "Technology solutions that improve healthcare operations, accessibility, and information management."
+        "Digital solutions that help healthcare organizations improve patient management, record keeping, and administrative workflows.",
+
+        solutions: [
+            "Hospital Management Systems",
+            "Patient Records Management",
+            "Appointment Platforms"
+        ]
+
     },
 
 
     {
+        id: "education",
+
+        title: "Education",
+
+        icon: "🎓",
+
+        description:
+        "Technology solutions that simplify student management, accommodation systems, and institutional operations.",
+
+        solutions: [
+            "Student Management Systems",
+            "Hostel Management Systems",
+            "Learning Platforms"
+        ]
+
+    },
+
+
+    {
+        id: "real-estate",
+
+        title: "Real Estate",
+
+        icon: "🏠",
+
+        description:
+        "Digital platforms that help property businesses manage properties, tenants, and rental operations efficiently.",
+
+        solutions: [
+            "Property Management Systems",
+            "Rental Platforms",
+            "Tenant Management"
+        ]
+
+    },
+
+
+    {
+        id: "business",
+
         title: "Small & Medium Businesses",
 
-        description:
-            "Digital tools that help businesses improve productivity, reach customers, and grow."
-    },
-
-
-    {
-        title: "Government & Institutions",
+        icon: "🏢",
 
         description:
-            "Reliable digital platforms that support public services, administration, and operational efficiency."
-    },
+        "Custom software and digital solutions designed to help businesses improve productivity and growth.",
 
+        solutions: [
+            "Business Websites",
+            "Custom Applications",
+            "Automation Tools"
+        ]
 
-    {
-        title: "Finance & Organizations",
-
-        description:
-            "Secure technology solutions that help organizations manage information and deliver better services."
     }
 
 ];
