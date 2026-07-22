@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 
 import solutions from "../data/solutions";
 import SolutionGallery from "../components/ui/SolutionGallery";
+import SolutionFeatures from "../components/ui/SolutionFeatures";
 
 
 function SolutionDetails() {
@@ -124,6 +125,41 @@ mb-8
                     <SolutionGallery
 
                         images={solution.images}
+
+                    />
+
+
+                </div>
+
+            </section>
+
+            <section className="
+py-20
+bg-slate-50
+">
+
+                <div className="
+max-w-6xl
+mx-auto
+px-6
+">
+
+
+                    <h2 className="
+text-3xl
+font-bold
+text-slate-900
+mb-8
+">
+
+                        Key Features
+
+                    </h2>
+
+
+                    <SolutionFeatures
+
+                        features={solution.features}
 
                     />
 
