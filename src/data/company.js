@@ -1,4 +1,5 @@
 const company = {
+    motto: "We don't just build software. We build solutions that create value.",
 
     story:
         "NTS Digital Solutions was founded with a vision to help businesses, organizations, and institutions leverage technology to improve operations, connect with customers, and create new opportunities.",
