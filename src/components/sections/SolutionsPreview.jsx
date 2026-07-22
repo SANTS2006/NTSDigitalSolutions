@@ -1,5 +1,5 @@
 import SectionTitle from "../ui/SectionTitle";
-import SolutionCard from "../ui/SolutionCard";
+import SolutionsCard from "../ui/SolutionsCard";
 import solutions from "../../data/solutions";
 
 const SolutionsPreview = () => {
@@ -10,7 +10,7 @@ const SolutionsPreview = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
                 {solutions.map((solution, index) => (
-                    <SolutionCard  key={index} title={solution.title} description={solution.description} solution={solution} />
+                    <SolutionsCard  key={index} title={solution.title} description={solution.description} solution={solution} />
                 ))}
             </div>
         </div>

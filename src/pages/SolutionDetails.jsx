@@ -1,0 +1,108 @@
+import { useParams } from "react-router-dom";
+
+import solutions from "../data/solutions";
+
+
+function SolutionDetails() {
+
+    const { id } = useParams();
+
+
+    const solution = solutions.find(
+        item => item.id === id
+    );
+
+
+    if (!solution) {
+
+        return (
+
+            <div className="
+            py-20
+            text-center
+            ">
+
+                <h1 className="
+                text-3xl
+                font-bold
+                ">
+
+                    Solution Not Found
+
+                </h1>
+
+            </div>
+
+        );
+
+    }
+
+
+    return (
+
+        <>
+
+            <section className="
+            py-20
+            bg-slate-50
+            ">
+
+
+                <div className="
+                max-w-5xl
+                mx-auto
+                px-6
+                text-center
+                ">
+
+
+                    <p className="
+                    text-blue-600
+                    font-semibold
+                    uppercase
+                    ">
+
+                        {solution.category}
+
+                    </p>
+
+
+
+                    <h1 className="
+                    mt-3
+                    text-4xl
+                    md:text-6xl
+                    font-bold
+                    text-slate-900
+                    ">
+
+                        {solution.title}
+
+                    </h1>
+
+
+                    <p className="
+                    mt-6
+                    text-lg
+                    text-slate-600
+                    ">
+
+                        {solution.description}
+
+                    </p>
+
+
+                </div>
+
+
+            </section>
+
+
+        </>
+
+    );
+
+}
+
+
+export default SolutionDetails;
