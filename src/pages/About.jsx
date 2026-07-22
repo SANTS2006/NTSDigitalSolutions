@@ -3,6 +3,7 @@ import AboutStory from "../components/sections/AboutStory";
 import MissionVision from "../components/sections/MissionVision";
 import CoreValues from "../components/sections/CoreValues";
 import FounderProfile from "../components/sections/FounderProfile";
+import CTA from "../components/sections/CTA";
 
 function About() {
     return (
@@ -12,6 +13,7 @@ function About() {
             <MissionVision />
             <CoreValues />
             <FounderProfile />
+            <CTA />
         </>
     );
 }
