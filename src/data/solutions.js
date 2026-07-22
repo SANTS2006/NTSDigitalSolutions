@@ -45,12 +45,21 @@ const solutions = [
         ],
 
 
-        technologies: [
-            "NetBeans",
-            "Java Swing",
-            "mssql"
-        ],
-
+        technology: {
+            frontend: [
+                "Java Swing"
+            ],
+            backend: [
+                "Java"
+            ],
+            database: [
+                "mssql"
+            ],
+            tools: [
+                "Git",
+                "Github"
+            ]
+        },
 
         images: [
            login,
@@ -83,12 +92,21 @@ const solutions = [
         ],
 
 
-        technologies: [
-            "React",
-            "Node.js",
-            "mssql"
-        ],
-
+        technology: {
+            frontend: [
+                "React.js"
+            ],
+            backend: [
+                "Node.js"
+            ],
+            database: [
+                "mssql"
+            ],
+            tools: [
+                "Git",
+                "Github"
+            ]
+        },
 
         images: [
             hostelLogin,
@@ -121,11 +139,21 @@ const solutions = [
         ],
 
 
-        technologies: [
-            "React",
-            "Node.js",
-            "mssql"
-        ],
+        technology: {
+            frontend: [
+                "React.js"
+            ],
+            backend: [
+                "Node.js"
+            ],
+            database: [
+                "mssql"
+            ], 
+            tools: [
+                "Git",
+                "Github"
+            ]
+        },
 
 
         images: [

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import solutions from "../data/solutions";
 import SolutionGallery from "../components/ui/SolutionGallery";
 import SolutionFeatures from "../components/ui/SolutionFeatures";
+import TechnologyStack from "../components/ui/TechnologyStack";
 
 
 function SolutionDetails() {
@@ -160,6 +161,41 @@ mb-8
                     <SolutionFeatures
 
                         features={solution.features}
+
+                    />
+
+
+                </div>
+
+            </section>
+
+            <section className="
+py-20
+bg-white
+">
+
+                <div className="
+max-w-6xl
+mx-auto
+px-6
+">
+
+
+                    <h2 className="
+text-3xl
+font-bold
+text-slate-900
+mb-8
+">
+
+                        Technology Stack
+
+                    </h2>
+
+
+                    <TechnologyStack
+
+                        technology={solution.technology}
 
                     />
 
