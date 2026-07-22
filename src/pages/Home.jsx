@@ -3,6 +3,7 @@ import ServicesPreview from "../components/sections/ServicesPreview";
 import SolutionsPreview from "../components/sections/SolutionsPreview";
 import IndustriesPreview from "../components/sections/IndustriesPreview";
 import WhyChoose from "../components/sections/WhyChoose";
+import Founder from "../components/sections/Founder";
 
 function Home() {
     return (
@@ -12,6 +13,7 @@ function Home() {
             <SolutionsPreview />
             <IndustriesPreview />
             <WhyChoose />
+            <Founder />
         </>
     );
 }
