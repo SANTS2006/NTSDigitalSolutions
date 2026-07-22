@@ -1,8 +1,12 @@
+import ServiceHero from "../components/sections/ServiceHero";
+import ServicesList from "../components/sections/ServicesList";
+
 function Services() {
     return (
-        <div>
-            <h1>Services Page</h1>
-        </div>
+        <>
+            <ServiceHero />
+            <ServicesList />
+        </>
     );
 }
 

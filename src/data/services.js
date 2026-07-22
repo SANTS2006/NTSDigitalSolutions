@@ -4,7 +4,14 @@ const services = [
         title: "Web Development",
 
         description:
-            "We build modern, responsive websites and web applications that help businesses establish a strong digital presence and serve their customers better."
+            "We build modern, responsive, and scalable websites that help businesses establish a strong digital presence and connect with their customers.",
+
+        features: [
+            "Business websites",
+            "Corporate platforms",
+            "Web applications",
+            "E-commerce solutions"
+        ]
     },
 
 
@@ -12,15 +19,14 @@ const services = [
         title: "Mobile Application Development",
 
         description:
-            "We create reliable mobile applications that help businesses connect with users and improve their digital services."
-    },
+            "We develop mobile applications that help businesses deliver services, improve engagement, and reach customers on mobile devices.",
 
-
-    {
-        title: "Custom Software Solutions",
-
-        description:
-            "We develop tailored software solutions that automate processes, improve efficiency, and solve unique business challenges."
+        features: [
+            "Android applications",
+            "iOS applications",
+            "Business mobile apps",
+            "Mobile-first experiences"
+        ]
     },
 
 
@@ -28,23 +34,44 @@ const services = [
         title: "UI/UX Design",
 
         description:
-            "We design intuitive and engaging user experiences that make digital products simple, beautiful, and easy to use."
+            "We design intuitive and engaging digital experiences focused on usability, accessibility, and customer satisfaction.",
+
+        features: [
+            "User research",
+            "Interface design",
+            "Prototype creation",
+            "Design systems"
+        ]
     },
 
 
     {
-        title: "Digital Transformation",
+        title: "Custom Software Solutions",
 
         description:
-            "We help organizations adopt modern technologies to improve operations, productivity, and customer experiences."
+            "We create tailored software systems designed around specific business processes, workflows, and operational needs.",
+
+        features: [
+            "Business management systems",
+            "Internal tools",
+            "Database solutions",
+            "Custom platforms"
+        ]
     },
 
 
     {
-        title: "IT Consulting",
+        title: "Maintenance & Support",
 
         description:
-            "We provide technology guidance to help businesses choose the right digital solutions and build effective strategies."
+            "We provide ongoing technical support, improvements, and maintenance to keep digital solutions secure and reliable.",
+
+        features: [
+            "Bug fixes",
+            "Performance improvements",
+            "Updates",
+            "Technical support"
+        ]
     }
 
 ];
