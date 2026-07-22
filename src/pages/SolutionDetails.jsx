@@ -4,6 +4,7 @@ import solutions from "../data/solutions";
 import SolutionGallery from "../components/ui/SolutionGallery";
 import SolutionFeatures from "../components/ui/SolutionFeatures";
 import TechnologyStack from "../components/ui/TechnologyStack";
+import ChallengeSolution from "../components/ui/ChallengeSolution";
 
 
 function SolutionDetails() {
@@ -196,6 +197,43 @@ mb-8
                     <TechnologyStack
 
                         technology={solution.technology}
+
+                    />
+
+
+                </div>
+
+            </section>
+
+            <section className="
+py-20
+bg-white
+">
+
+                <div className="
+max-w-6xl
+mx-auto
+px-6
+">
+
+
+                    <h2 className="
+text-3xl
+font-bold
+text-slate-900
+mb-8
+">
+
+                        Challenge & Solution
+
+                    </h2>
+
+
+                    <ChallengeSolution
+
+                        challenge={solution.challenge}
+
+                        solution={solution.solution}
 
                     />
 

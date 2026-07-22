@@ -61,6 +61,13 @@ const solutions = [
             ]
         },
 
+        challenge:
+            "Healthcare organizations often rely on manual record-keeping processes, making patient information difficult to manage efficiently.",
+
+
+        solution:
+            "NTS developed a centralized digital records management system that improves organization, accessibility, and workflow efficiency.",
+
         images: [
            login,
             dashboard1, staff,
@@ -107,6 +114,13 @@ const solutions = [
                 "Github"
             ]
         },
+
+        challenge:
+            "Healthcare organizations often rely on manual record-keeping processes, making patient information difficult to manage efficiently.",
+
+
+        solution:
+            "NTS developed a centralized digital records management system that improves organization, accessibility, and workflow efficiency.",
 
         images: [
             hostelLogin,
@@ -155,6 +169,13 @@ const solutions = [
             ]
         },
 
+
+        challenge:
+            "Healthcare organizations often rely on manual record-keeping processes, making patient information difficult to manage efficiently.",
+
+
+        solution:
+            "NTS developed a centralized digital records management system that improves organization, accessibility, and workflow efficiency.",
 
         images: [
             rentalLogin,
