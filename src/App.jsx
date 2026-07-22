@@ -1,37 +1,100 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
 
-import MainLayout from './components/layout/MainLayout';
+import MainLayout from "./components/layout/MainLayout";
+import PageLoader from "./components/common/PageLoader";
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Solutions from './pages/Solutions';
-import Industries from './pages/Industries';
-import Contact from './pages/Contact';
-import SolutionDetails from "./pages/SolutionDetails";
+
+// Lazy loaded pages
+
+const Home = lazy(() => import("./pages/Home"));
+const About = lazy(() => import("./pages/About"));
+const Services = lazy(() => import("./pages/Services"));
+const Solutions = lazy(() => import("./pages/Solutions"));
+const SolutionDetails = lazy(() => import("./pages/SolutionDetails"));
+const Industries = lazy(() => import("./pages/Industries"));
+const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+
+
 
 function App(){
-  return (
-    <BrowserRouter>
 
-      <MainLayout>
+    return (
 
-        <Routes>
+        <BrowserRouter>
 
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/solutions' element={<Solutions />} />
-          <Route path='/solutions/:id' element={<SolutionDetails />} />
-          <Route path='/industries' element={<Industries />} />
-          <Route path='/contact' element={<Contact />} />
 
-        </Routes>
+            <MainLayout>
 
-      </MainLayout>
-      
-    </BrowserRouter>
-  );
-};
+
+                <Suspense fallback={<PageLoader />}>
+
+                    <Routes>
+
+
+                        <Route 
+                            path="/" 
+                            element={<Home />} 
+                        />
+
+
+                        <Route 
+                            path="/about" 
+                            element={<About />} 
+                        />
+
+
+                        <Route 
+                            path="/services" 
+                            element={<Services />} 
+                        />
+
+
+                        <Route 
+                            path="/solutions" 
+                            element={<Solutions />} 
+                        />
+
+
+                        <Route 
+                            path="/solutions/:id" 
+                            element={<SolutionDetails />} 
+                        />
+
+
+                        <Route 
+                            path="/industries" 
+                            element={<Industries />} 
+                        />
+
+
+                        <Route 
+                            path="/contact" 
+                            element={<Contact />} 
+                        />
+
+
+                        <Route 
+                            path="*" 
+                            element={<NotFound />} 
+                        />
+
+
+                    </Routes>
+
+
+                </Suspense>
+
+
+            </MainLayout>
+
+
+        </BrowserRouter>
+
+    );
+
+}
+
 
 export default App;

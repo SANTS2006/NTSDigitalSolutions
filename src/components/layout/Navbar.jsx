@@ -18,7 +18,7 @@ function Navbar() {
 
     return (
 
-        <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <nav aria-label="Main navigation" className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
 
             <div className="max-w-7xl mx-auto px-6 py-4">
 
@@ -26,18 +26,23 @@ function Navbar() {
 
 
                     <Logo />
+    
                     <button
-                        className="md:hidden text-2xl text-slate-900"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
 
-                        <motion.div key={isOpen ? "close" : "menu"} initial={{rotate:-90, opacity: 0}} animate={{rotate: 0, opacity: 1}} transition={{duration: 0.2}}>
+    onClick={() => setIsOpen(!isOpen)}
+
+    aria-label="Toggle navigation menu"
+
+    aria-expanded={isOpen} className="md:hidden text-2xl text-slate-700"
+
+>
+    <motion.div key={isOpen ? "close" : "menu"} initial={{rotate:-90, opacity: 0}} animate={{rotate: 0, opacity: 1}} transition={{duration: 0.2}}>
                             {
                                 isOpen ? <FiX /> : <FiMenu />
                             }
                         </motion.div>
 
-                    </button>
+</button>
 
                     <div className="hidden md:flex items-center gap-8">
                         <Link onClick={closeMenu}

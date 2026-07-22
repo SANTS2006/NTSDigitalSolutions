@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
-
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import Button from "../ui/Button";
 
 function ContactForm(){
 
@@ -11,13 +13,61 @@ function ContactForm(){
 
 
 
-    function onSubmit(data){
+    async function onSubmit(data){
+
+    setIsSending(true);
+
+
+    try {
 
         console.log(data);
 
+        await emailjs.send(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+
+    data,
+
+    {
+        publicKey:
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    }
+);
+
+
+setMessage(
+"Message sent successfully. We will contact you soon."
+);
+
         reset();
 
+
     }
+
+    catch(error){
+
+        setMessage(
+"Something went wrong. Please try again."
+);
+
+        console.log(error);
+
+    }
+
+    finally {
+
+        setIsSending(false);
+
+    }
+
+}
+
+
+    const [isSending, setIsSending] = useState(false);
+
+    const [message,setMessage] = useState("");
+   
 
 
 
@@ -197,26 +247,15 @@ function ContactForm(){
                     />
 
 
-                    <button
+                   <Button disabled={isSending}>
 
-                        type="submit"
+    {
+        isSending
+        ? "Sending..."
+        : "Send Message"
+    }
 
-                        className="
-                        w-full
-                        bg-blue-600
-                        text-white
-                        py-3
-                        rounded-lg
-                        font-semibold
-                        hover:bg-blue-700
-                        transition
-                        "
-
-                    >
-
-                        Send Message
-
-                    </button>
+</Button>
 
 
                 </form>

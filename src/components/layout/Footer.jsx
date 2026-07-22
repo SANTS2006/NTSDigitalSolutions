@@ -100,10 +100,18 @@ function Footer() {
 
             <div className="border-t border-slate-700 py-6 text-center text-slate-500">
                 <div className="flex justify-center gap-5 mb-4 text-xl">
-                    <FiFacebook />
-                    <FiTwitter />
-                    <FiLinkedin />
-                    <FiGithub />
+                    <a href="#" aria-label="Facebook">
+                        <FiFacebook />
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <FiTwitter />
+                    </a>
+                    <a href="#" aria-label="Linkedin">
+                        <FiLinkedin />
+                    </a>
+                    <a href="#" aria-label="Github">
+                        <FiGithub />
+                    </a>
                 </div>
                 <p>@ 2026 NTS Digital Solutions. All rights reserved</p>
             </div>

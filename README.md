@@ -1,3 +1,53 @@
+# NTS Digital Solutions
+
+### Empowering Businesses Through Digital Innovation
+
+NTS Digital Solutions is a software development company focused on creating reliable digital solutions for businesses, organizations, and institutions.
+
+## Services
+
+- Web Development
+- Mobile Applications
+- UI/UX Design
+- Software Solutions
+
+## Solutions
+
+- Hospital Records Management System
+- Hostel Registration & Occupancy Management System
+- House Rental Management System
+
+## Technologies
+
+Frontend:
+- React.js
+- Tailwind CSS
+
+Backend:
+- Node.js
+- Java
+
+Database:
+- MSSQL
+
+## Getting Started
+
+Clone the repository:
+
+npm install
+
+Run development server:
+
+npm run dev
+
+Build for production:
+
+npm run build
+
+## Contact
+
+NTS Digital Solutions  
+Empowering Businesses Through Digital Innovation
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
