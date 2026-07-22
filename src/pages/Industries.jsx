@@ -1,8 +1,12 @@
+import IndustriesHero from "../components/sections/IndustriesHero";
+import IndustriesPreview from "../components/sections/IndustriesPreview";
+
 function Industries() {
     return (
-        <div>
-            <h1>Industries Page</h1>
-        </div>
+        <>
+            <IndustriesHero />
+            <IndustriesPreview />
+        </>
     );
 }
 

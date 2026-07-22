@@ -9,7 +9,7 @@ const IndustriesPreview = () => {
               <SectionTitle subtitle="Industries We Serve" title="Technology solutions for every sector" description="We help organizations across different industries solve problems through innovative digital solutions." />
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {industries.map((industry, index) =>(
-                    <IndustryCard key={index} title={industry.title} description={industry.description} />
+                    <IndustryCard key={index} title={industry.title} description={industry.description} industry={industry} />
                 ))}
               </div>
           </div>
