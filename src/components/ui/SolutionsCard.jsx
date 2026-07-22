@@ -150,29 +150,31 @@ function SolutionsCard({
 
 
                     {
-                        solution.technologies.map((tech) => (
+    Object.values(solution.technology)
+    .flat()
+    .map((tech) => (
 
-                            <span
+        <span
 
-                                key={tech}
+            key={tech}
 
-                                className="
-                                bg-slate-100
-                                px-3
-                                py-1
-                                rounded-full
-                                text-sm
-                                text-slate-700
-                                "
+            className="
+            bg-slate-100
+            px-3
+            py-1
+            rounded-full
+            text-sm
+            text-slate-700
+            "
 
-                            >
+        >
 
-                                {tech}
+            {tech}
 
-                            </span>
+        </span>
 
-                        ))
-                    }
+    ))
+}
 
 
                 </div>

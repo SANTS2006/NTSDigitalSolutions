@@ -5,6 +5,7 @@ import SolutionGallery from "../components/ui/SolutionGallery";
 import SolutionFeatures from "../components/ui/SolutionFeatures";
 import TechnologyStack from "../components/ui/TechnologyStack";
 import ChallengeSolution from "../components/ui/ChallengeSolution";
+import SolutionCTA from '../components/sections/SolutionCTA';
 
 
 function SolutionDetails() {
@@ -218,14 +219,11 @@ px-6
 
 
                     <h2 className="
-text-3xl
-font-bold
-text-slate-900
-mb-8
-">
-
-                        Challenge & Solution
-
+                        text-3xl
+                        font-bold
+                        text-slate-900
+                        mb-8
+                        "> Challenge & Solution
                     </h2>
 
 
@@ -241,6 +239,7 @@ mb-8
                 </div>
 
             </section>
+            <SolutionCTA />
 
 
         </>
