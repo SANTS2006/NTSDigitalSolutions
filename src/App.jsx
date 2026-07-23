@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 
 import MainLayout from "./components/layout/MainLayout";
 import PageLoader from "./components/common/PageLoader";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 
 // Lazy loaded pages
@@ -29,6 +30,8 @@ function App(){
 
 
                 <Suspense fallback={<PageLoader />}>
+
+                    <ScrollToTop />
 
                     <Routes>
 
