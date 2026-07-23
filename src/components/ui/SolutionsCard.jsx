@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaCheckCircle } from "react-icons/fa";
 
 
 function SolutionsCard({
@@ -118,17 +119,13 @@ function SolutionsCard({
 
                                 className="
                                 text-slate-600
-                                flex
+                                flex items-center
                                 gap-2
                                 "
 
                             >
 
-                                <span className="
-                                text-emerald-500
-                                ">
-                                    ✓
-                                </span>
+                                <FaCheckCircle className="text-blue-500" />
 
 
                                 {feature}

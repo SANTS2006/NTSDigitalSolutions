@@ -1,15 +1,12 @@
 import React from 'react'
 
-const ContactInfoCard = ({ info }) => {
+const ContactInfoCard = ({ info, icon: Icon }) => {
   return (
-    <div className="bg-white rounded-2xl p-6 border border-slate-200 text-center">
+    <div className="bg-white rounded-2xl p-6 border border-slate-200">
         <div className="text-3xl mb-4">
-            {info.icon}
+            <Icon className="text-blue-500"/>
         </div>
-        <h3 className="text-lg font-semibold text-slate-900">
-            {info.title}
-        </h3>
-        <p className="mt-2 text-slate-600">
+        <p className="mt-2 text-slate-900 font-bold text-xl">
             {info.value}
         </p>
     </div>

@@ -9,7 +9,7 @@ const CoreValues = () => {
               <SectionTitle subtitle="Our Values" title="The principles that guide NTS Digital Solutions" description="Our values shape how we build solutions, work with clients, and create long-term impact." />
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {values.map((value, index) => (
-                      <ValueCard key={index} title={value.title} description={value.description} />
+                      <ValueCard key={index} title={value.title} description={value.description} icon={value.icon} />
                   ))}
               </div>
           </div>

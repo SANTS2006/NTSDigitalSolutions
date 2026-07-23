@@ -1,3 +1,6 @@
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 const contactInfo = [
 
     {
@@ -5,9 +8,9 @@ const contactInfo = [
 
         title: "Location",
 
-        value: "Sierra Leone",
+        value: "137 British Road, New London, Jui",
 
-        icon: "📍"
+        icon: FaMapMarkerAlt
 
     },
 
@@ -19,7 +22,7 @@ const contactInfo = [
 
         value: "hello@ntsdigitalsolutions.com",
 
-        icon: "📧"
+        icon: FaEnvelope
 
     },
 
@@ -31,7 +34,7 @@ const contactInfo = [
 
         value: "+232 76 784 684",
 
-        icon: "📞"
+        icon: FaPhone
 
     },
 

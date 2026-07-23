@@ -9,7 +9,7 @@ const ServicesList = () => {
               <SectionTitle subtitle="What We Offer" title="Digital solutions designed for growth" description="Our services help businesses build improve, and scale their digital presence." />
               <div className="grid md:grid-cols-2 gap-8">
                   {services.map((service, index) => (
-                      <ServiceDetailCard key={index} title={service.title} description={service.description} features={service.features} />
+                    <ServiceDetailCard key={index} title={service.title} description={service.description} features={service.features} icon={service.icon}/>
                   ))}
               </div>
           </div>

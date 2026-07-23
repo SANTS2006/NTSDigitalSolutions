@@ -4,6 +4,7 @@ import Logo from "../common/Logo";
 import Button from "../ui/Button";
 
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,6 +17,13 @@ function Navbar() {
         setIsOpen(false);
     }
 
+    const linkStyles = ({ isActive }) =>
+    `text-xl transition ${
+        isActive
+            ? "text-blue-600 font-semibold"
+            : "text-slate-700 hover:text-blue-600"
+    }`;
+
     return (
 
         <nav aria-label="Main navigation" className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
@@ -26,7 +34,7 @@ function Navbar() {
 
                     <Logo />
     
-                    <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation menu" aria-expanded={isOpen} className="md:hidden text-2xl text-slate-700">
+                    <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation menu" aria-expanded={isOpen} className="md:hidden text-xl text-slate-700">
                         <motion.div key={isOpen ? "close" : "menu"} initial={{rotate:-90, opacity: 0}} animate={{rotate: 0, opacity: 1}} transition={{duration: 0.2}}>
                             {
                                 isOpen ? <FiX /> : <FiMenu />
@@ -35,54 +43,55 @@ function Navbar() {
                     </button>
 
                     <div className="hidden md:flex items-center gap-8">
-                        <Link onClick={closeMenu}
+
+                        <NavLink
+                            onClick={closeMenu}
                             to="/"
-                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
+                            end
+                            className={linkStyles}
                         >
                             Home
-                        </Link>
+                        </NavLink>
 
-
-                        <Link onClick={closeMenu}
+                        <NavLink
+                            onClick={closeMenu}
                             to="/about"
-                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
+                            className={linkStyles}
                         >
                             About
-                        </Link>
+                        </NavLink>
 
-
-                        <Link onClick={closeMenu}
+                        <NavLink
+                            onClick={closeMenu}
                             to="/services"
-                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
+                            className={linkStyles}
                         >
                             Services
-                        </Link>
+                        </NavLink>
 
-
-                        <Link onClick={closeMenu}
+                        <NavLink
+                            onClick={closeMenu}
                             to="/solutions"
-                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
+                            className={linkStyles}
                         >
                             Solutions
-                        </Link>
+                        </NavLink>
 
-
-                        <Link onClick={closeMenu}
+                        <NavLink
+                            onClick={closeMenu}
                             to="/industries"
-                            className="text-2xl text-slate-700  hover:text-blue-600 transition">
+                            className={linkStyles}
+                        >
                             Industries
-                        </Link>
+                        </NavLink>
 
-                        <Link onClick={closeMenu}
+                        <NavLink
+                            onClick={closeMenu}
                             to="/contact"
-                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
+                            className={linkStyles}
                         >
                             Contact
-                        </Link>
-
-                        {/* <Button onClick={closeMenu}>
-                            Get Started
-                        </Button> */}
+                        </NavLink>
 
                     </div>
                 </div>
@@ -90,37 +99,54 @@ function Navbar() {
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div initial={{opacity: 0, height: 0, y: -10}} animate={{opacity:1, height:"auto", y:0}} exit={{opacity: 0, height: 0, y: -10}} transition={{duration: 0.3, ease: "easeInOut"}} className=" md:hidden mt-6 flex flex-col gap-4">
-                            <Link onClick={closeMenu} to="/" className="text-2xl text-slate-700 hover:text-blue-600 transition">
-                                Home
-                            </Link>
+                             <NavLink
+                            onClick={closeMenu}
+                            to="/"
+                            end
+                            className={linkStyles}
+                        >
+                            Home
+                        </NavLink>
 
+                        <NavLink
+                            onClick={closeMenu}
+                            to="/about"
+                            className={linkStyles}
+                        >
+                            About
+                        </NavLink>
 
-                            <Link onClick={closeMenu} to="/about" className="text-2xl text-slate-700 hover:text-blue-600 transition">
-                                About
-                            </Link>
+                        <NavLink
+                            onClick={closeMenu}
+                            to="/services"
+                            className={linkStyles}
+                        >
+                            Services
+                        </NavLink>
 
+                        <NavLink
+                            onClick={closeMenu}
+                            to="/solutions"
+                            className={linkStyles}
+                        >
+                            Solutions
+                        </NavLink>
 
-                            <Link onClick={closeMenu} to="/services" className="text-2xl text-slate-700 hover:text-blue-600 transition">
-                                Services
-                            </Link>
+                        <NavLink
+                            onClick={closeMenu}
+                            to="/industries"
+                            className={linkStyles}
+                        >
+                            Industries
+                        </NavLink>
 
-
-                            <Link onClick={closeMenu} to="/solutions" className="text-2xl text-slate-700 hover:text-blue-600 transition">
-                                Solutions
-                            </Link>
-
-
-                            <Link onClick={closeMenu} to="/industries" className="text-2xl text-slate-700 hover:text-blue-600 transition">
-                                Industries
-                            </Link>
-
-                            <Link onClick={closeMenu} to="/contact" className="text-2xl text-slate-700 hover:text-blue-600 transition">
-                                Contact
-                            </Link>
-
-                            {/* <Button onClick={closeMenu}>
-                                Get Started
-                            </Button> */}
+                        <NavLink
+                            onClick={closeMenu}
+                            to="/contact"
+                            className={linkStyles}
+                        >
+                            Contact
+                        </NavLink>
 
                         </motion.div>
                     )

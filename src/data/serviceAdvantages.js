@@ -1,7 +1,13 @@
+import { FaPuzzlePiece } from "react-icons/fa";
+import { FaCodeBranch } from "react-icons/fa";
+import { FaRegMessage } from "react-icons/fa6";
+import { FaHandshake } from "react-icons/fa";
 const serviceAdvantages = [
 
     {
         title: "Custom Solutions",
+
+        icon: FaPuzzlePiece,
 
         description:
             "We design and build solutions that match your unique business requirements and goals."
@@ -11,6 +17,8 @@ const serviceAdvantages = [
     {
         title: "Modern Development Practices",
 
+        icon: FaCodeBranch,
+
         description:
             "We use current tools, technologies, and professional workflows to create reliable software."
     },
@@ -19,6 +27,8 @@ const serviceAdvantages = [
     {
         title: "Transparent Communication",
 
+        icon: FaRegMessage,
+
         description:
             "We maintain clear communication throughout the project so you always understand progress."
     },
@@ -26,6 +36,8 @@ const serviceAdvantages = [
 
     {
         title: "Long-Term Partnership",
+
+        icon: FaHandshake,
 
         description:
             "We continue supporting and improving solutions even after the initial delivery."

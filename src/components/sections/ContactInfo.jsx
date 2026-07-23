@@ -35,6 +35,8 @@ function ContactInfo(){
 
                                 info={info}
 
+                                icon = {info.icon}
+
                             />
 
                         ))

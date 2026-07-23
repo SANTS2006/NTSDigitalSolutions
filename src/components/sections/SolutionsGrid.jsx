@@ -47,6 +47,7 @@ function SolutionsGrid() {
                                 key={solution.id}
 
                                 solution={solution}
+                                
 
                             />
 

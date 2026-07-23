@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function ServiceAdvantageCard({
     title,
-    description
+    description, icon: Icon
 }) {
 
 
@@ -29,16 +29,7 @@ function ServiceAdvantageCard({
 
         >
 
-            <div className="
-            text-emerald-500
-            text-2xl
-            mb-4
-            ">
-
-                ✓
-
-            </div>
-
+            <Icon className="text-blue-500 text-2xl" />
 
 
             <h3 className="

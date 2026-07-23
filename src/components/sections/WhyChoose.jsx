@@ -12,7 +12,7 @@ const WhyChoose = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {advantages.map((item, index) => (
-                      <AdvantageCard key={index} title={item.title} description={item.description} />
+                      <AdvantageCard key={index} title={item.title} description={item.description} icon={item.icon}/>
                   ))}
               </div>
             </div>

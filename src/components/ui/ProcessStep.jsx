@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 
 function ProcessStep({
-    number,
+    icon: Icon,
     title,
     description
 }) {
@@ -32,19 +32,15 @@ function ProcessStep({
 
 
             <div className="
-            w-10
-            h-10
             rounded-full
-            bg-blue-600
             text-white
             flex
             items-center
-            justify-center
             font-bold
             mb-4
             ">
 
-                {number}
+                <Icon className="text-blue-500 text-2xl"/>
 
             </div>
 

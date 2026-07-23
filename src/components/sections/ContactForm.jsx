@@ -5,72 +5,55 @@ import Button from "../ui/Button";
 
 function ContactForm(){
 
+    const [isSending, setIsSending] = useState(false);
+    const [message,setMessage] = useState("");
+
     const {
         register,
         handleSubmit,
         reset
     } = useForm();
 
-
-
     async function onSubmit(data){
 
-    setIsSending(true);
+        setIsSending(true);
 
+        try {
+            await emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            data,
+                {
+                    publicKey:
+                    import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+                }
+            );
 
-    try {
+            setMessage(
+            "Message sent successfully. We will contact you soon."
+            );
 
-        console.log(data);
+            reset();
 
-        await emailjs.send(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        }
+        catch(error){
 
-    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-
-    data,
-
-    {
-        publicKey:
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    }
-);
-
-
-setMessage(
-"Message sent successfully. We will contact you soon."
-);
-
-        reset();
-
-
-    }
-
-    catch(error){
-
-        setMessage(
-"Something went wrong. Please try again."
-);
+            setMessage(
+            "Something went wrong. Please try again."
+            );
 
         console.log(error);
 
+        }
+
+        finally {
+
+            setIsSending(false);
+
+        }
+
     }
-
-    finally {
-
-        setIsSending(false);
-
-    }
-
-}
-
-
-    const [isSending, setIsSending] = useState(false);
-
-    const [message,setMessage] = useState("");
-   
-
-
-
+ 
     return (
 
         <section className="
@@ -97,7 +80,7 @@ setMessage(
 
                 </h2>
 
-
+                {message && <p className="font-bold text-2xl bg-blue-100">{message}</p>}
 
                 <form
 
@@ -249,13 +232,13 @@ setMessage(
 
                    <Button disabled={isSending}>
 
-    {
-        isSending
-        ? "Sending..."
-        : "Send Message"
-    }
+                    {
+                        isSending
+                        ? "Sending..."
+                        : "Send Message"
+                    }
 
-</Button>
+                </Button>
 
 
                 </form>

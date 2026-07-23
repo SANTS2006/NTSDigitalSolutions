@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-
+import { FaCheckCircle } from "react-icons/fa";
 
 function IndustryCard({
     industry
 }) {
+    const Icon = industry.icon;
 
     return (
 
@@ -34,8 +35,7 @@ function IndustryCard({
             text-4xl
             mb-6
             ">
-
-                {industry.icon}
+                <Icon className="text-blue-500" />
 
             </div>
 
@@ -83,20 +83,12 @@ function IndustryCard({
                             key={solution}
 
                             className="
-                            flex
-                            gap-2
+                            flex items-center gap-1
                             text-slate-700
                             "
 
                         >
-
-                            <span className="
-                            text-emerald-500
-                            ">
-                                ✓
-                            </span>
-
-
+                            <FaCheckCircle className="text-blue-500" />
                             {solution}
 
 

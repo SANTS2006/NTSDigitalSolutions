@@ -5,12 +5,12 @@ import Button from '../ui/Button';
 
 function Hero(){
     return (
-        <section className="min-h-[50vh] findLastIndex items-clearInterval bg-slate-50">
-            <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <section className="min-h-[50vh] findLastIndex items-clearInterval bg-slate-50 ">
+            <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-1 gap-2 items-center">
                 <motion.div initial={{opacity:0, x:-50}} animate={{opacity :1, x: 0}} transition={{duration: 0.7}}>
-                    <p className='text-blue-600 font-semibold uppercase tracking-wide mb-4'>
+                    {/* <p className='text-blue-600 font-semibold uppercase tracking-wide mb-4'>
                         Digital Solutions Company
-                    </p>
+                    </p> */}
                     <h1 className="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">
                         Empowering Businesses Through
                         <span className='text-blue-600'>
@@ -22,14 +22,14 @@ function Hero(){
                         NTS Digital Solutions helps businesses, organizations, and institutions transform ideas into powerful digital experiences.
                     </p>
                     <div className="mt-8 flex flex-wrap gap-4">
-                        <Button>Get Started</Button>
+                        {/* <Button>Get Started</Button> */}
                         <Link to="/services">
                             <Button variant="secondary">View Services</Button>
                         </Link>
                     </div>
                 </motion.div>
 
-                <motion.div initial={{opacity:0, x:50}} animate={{opacity:1, x:0}} transition={{duration: 0.7, delay: 0.2}} className='flex justify-center'>
+                {/* <motion.div initial={{opacity:0, x:50}} animate={{opacity:1, x:0}} transition={{duration: 0.7, delay: 0.2}} className='flex justify-center'>
 
                     <div className="w-full max-w-md h-80 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-500 flex items-center justify-center text-white shadow-xl">
                         <div className="text-center">
@@ -42,7 +42,7 @@ function Hero(){
                         </div>
                     </div>
 
-                </motion.div>
+                </motion.div> */}
             </div>
         </section>
     )

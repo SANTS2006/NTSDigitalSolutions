@@ -56,6 +56,8 @@ function WhyWorkWithNTS() {
 
                                 description={item.description}
 
+                                icon={item.icon}
+
                             />
 
                         ))

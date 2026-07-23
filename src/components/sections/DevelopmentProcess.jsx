@@ -53,7 +53,7 @@ function DevelopmentProcess() {
 
                                 key={index}
 
-                                number={index + 1}
+                                icon={step.icon}
 
                                 title={step.title}
 

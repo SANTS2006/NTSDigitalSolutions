@@ -2,7 +2,7 @@ import company from "../../data/company";
 
 const AboutHero = () => {
   return (
-      <section className="flex justify-center items-center py-20 bg-slate-50">
+      <section className="flex justify-center items-center py-20 ">
             <div className=" max-w-7xl -auto px-6">
               <h1 className=" text-4xl md:text-6xl font-bold text-slate-900 text-center">
                     About Us
