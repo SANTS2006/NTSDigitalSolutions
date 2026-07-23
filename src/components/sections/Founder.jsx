@@ -3,13 +3,15 @@ import founder from "../../data/founder";
 
 import React from 'react'
 
+import founderImg from '../../assets/images/founder/founderImg.jpeg'
+
 const Founder = () => {
   return (
       <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{opacity:0, x:-40}} whileInView={{opacity:1, x:0}} transition={{duration: 0.6}} viewport={{once: true}} className="flex justify-center">
-                <div className="w-72 h-72 rounded-full bg-slate-200 flex items-center justify-center text-slate-500">
-                    Founder Photo
+                <div className="w-90 h-72 rounded-full bg-slate-200 flex items-center justify-center text-slate-500">
+                    <img src={founderImg} alt="Newton Tamba Sam" className="w-full h-auto object-cover rounded-full bg-slate-200" />
                 </div>
             </motion.div>
             <motion.div initial={{opacity:0, x:40}} whileInView={{opacity:1, x:0}} transition={{duration: 0.6}} viewport={{once: true}}>

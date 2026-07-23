@@ -11,7 +11,7 @@ const ServiceDetailCard = ({ title, description, features }) => {
           </p>
           <ul className="space-y-3">
             {features.map((feature, index) => (
-                <li className="flex gap-3 text-slate-600">
+                <li key={index} className="flex gap-3 text-slate-600">
                     <span className="text-emerald-500">✓</span> 
                     {feature}
                 </li>

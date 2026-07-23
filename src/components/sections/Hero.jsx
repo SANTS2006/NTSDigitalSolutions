@@ -5,7 +5,7 @@ import Button from '../ui/Button';
 
 function Hero(){
     return (
-        <section className="min-h-[80vh] findLastIndex items-clearInterval bg-slate-50">
+        <section className="min-h-[50vh] findLastIndex items-clearInterval bg-slate-50">
             <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
                 <motion.div initial={{opacity:0, x:-50}} animate={{opacity :1, x: 0}} transition={{duration: 0.7}}>
                     <p className='text-blue-600 font-semibold uppercase tracking-wide mb-4'>

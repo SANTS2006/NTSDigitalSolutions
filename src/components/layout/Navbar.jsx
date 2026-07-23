@@ -24,30 +24,20 @@ function Navbar() {
 
                 <div className="flex items-center justify-between">
 
-
                     <Logo />
     
-                    <button
-
-    onClick={() => setIsOpen(!isOpen)}
-
-    aria-label="Toggle navigation menu"
-
-    aria-expanded={isOpen} className="md:hidden text-2xl text-slate-700"
-
->
-    <motion.div key={isOpen ? "close" : "menu"} initial={{rotate:-90, opacity: 0}} animate={{rotate: 0, opacity: 1}} transition={{duration: 0.2}}>
+                    <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle navigation menu" aria-expanded={isOpen} className="md:hidden text-2xl text-slate-700">
+                        <motion.div key={isOpen ? "close" : "menu"} initial={{rotate:-90, opacity: 0}} animate={{rotate: 0, opacity: 1}} transition={{duration: 0.2}}>
                             {
                                 isOpen ? <FiX /> : <FiMenu />
                             }
                         </motion.div>
-
-</button>
+                    </button>
 
                     <div className="hidden md:flex items-center gap-8">
                         <Link onClick={closeMenu}
                             to="/"
-                            className="text-slate-700 hover:text-blue-600 transition"
+                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
                         >
                             Home
                         </Link>
@@ -55,7 +45,7 @@ function Navbar() {
 
                         <Link onClick={closeMenu}
                             to="/about"
-                            className="text-slate-700 hover:text-blue-600 transition"
+                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
                         >
                             About
                         </Link>
@@ -63,7 +53,7 @@ function Navbar() {
 
                         <Link onClick={closeMenu}
                             to="/services"
-                            className="text-slate-700 hover:text-blue-600 transition"
+                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
                         >
                             Services
                         </Link>
@@ -71,7 +61,7 @@ function Navbar() {
 
                         <Link onClick={closeMenu}
                             to="/solutions"
-                            className="text-slate-700 hover:text-blue-600 transition"
+                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
                         >
                             Solutions
                         </Link>
@@ -79,13 +69,13 @@ function Navbar() {
 
                         <Link onClick={closeMenu}
                             to="/industries"
-                            className="text-slate-700  hover:text-blue-600 transition">
+                            className="text-2xl text-slate-700  hover:text-blue-600 transition">
                             Industries
                         </Link>
 
                         <Link onClick={closeMenu}
                             to="/contact"
-                            className="text-slate-700 hover:text-blue-600 transition"
+                            className="text-2xl text-slate-700 hover:text-blue-600 transition"
                         >
                             Contact
                         </Link>
@@ -100,31 +90,31 @@ function Navbar() {
                 <AnimatePresence>
                     {isOpen && (
                         <motion.div initial={{opacity: 0, height: 0, y: -10}} animate={{opacity:1, height:"auto", y:0}} exit={{opacity: 0, height: 0, y: -10}} transition={{duration: 0.3, ease: "easeInOut"}} className=" md:hidden mt-6 flex flex-col gap-4">
-                            <Link onClick={closeMenu} to="/" className="text-slate-700 hover:text-blue-600 transition">
+                            <Link onClick={closeMenu} to="/" className="text-2xl text-slate-700 hover:text-blue-600 transition">
                                 Home
                             </Link>
 
 
-                            <Link onClick={closeMenu} to="/about" className="text-slate-700 hover:text-blue-600 transition">
+                            <Link onClick={closeMenu} to="/about" className="text-2xl text-slate-700 hover:text-blue-600 transition">
                                 About
                             </Link>
 
 
-                            <Link onClick={closeMenu} to="/services" className="text-slate-700 hover:text-blue-600 transition">
+                            <Link onClick={closeMenu} to="/services" className="text-2xl text-slate-700 hover:text-blue-600 transition">
                                 Services
                             </Link>
 
 
-                            <Link onClick={closeMenu} to="/solutions" className="text-slate-700 hover:text-blue-600 transition">
+                            <Link onClick={closeMenu} to="/solutions" className="text-2xl text-slate-700 hover:text-blue-600 transition">
                                 Solutions
                             </Link>
 
 
-                            <Link onClick={closeMenu} to="/industries" className="text-slate-700 hover:text-blue-600 transition">
+                            <Link onClick={closeMenu} to="/industries" className="text-2xl text-slate-700 hover:text-blue-600 transition">
                                 Industries
                             </Link>
 
-                            <Link onClick={closeMenu} to="/contact" className="text-slate-700 hover:text-blue-600 transition">
+                            <Link onClick={closeMenu} to="/contact" className="text-2xl text-slate-700 hover:text-blue-600 transition">
                                 Contact
                             </Link>
 
